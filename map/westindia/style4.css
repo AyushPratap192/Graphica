@@ -1,0 +1,87 @@
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Container for destination boxes */
+.destination-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.destination-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%; /* Two boxes take up 45% width each */
+    text-align: center;
+    padding: 20px;
+}
+
+.destination-img {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #3498db;
+}
+
+.destination-box h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    text-decoration: none;
+    color: white;
+    background-color: #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .destination-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
